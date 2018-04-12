@@ -3,11 +3,6 @@
 
 [Demonstration Video](https://youtu.be/oa4sLbRMZF8)
 
-md5 sums 
-fa97761bad6cda69c6100cf60d0fc886  NS.py
-54bd20d8a5c71f62f88a98b03952e769  storeserver.py
-887762b0b43fa3ed57b1f4fbf005019a  DFScli.py
-
 dockers:
 vkaser/dfs:latest  - Storage server
 innost5/dfsclient:latest - Client
