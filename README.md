@@ -1,5 +1,4 @@
-# Distributed Systems - Group Assignment 1
-## Distributed File System
+## Distributed File System (DFS)
 ### Nikita Mokhnatkin, Niyaz Kashapov, Sergey Grebennikov
 
 [Demonstration Video](https://youtu.be/oa4sLbRMZF8)
