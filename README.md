@@ -4,8 +4,11 @@
 [Demonstration Video](https://youtu.be/oa4sLbRMZF8)
 
 dockers:
+
 vkaser/dfs:latest  - Storage server
+
 innost5/dfsclient:latest - Client
+
 aminiosa/dsns1 - Name server 
 
 
@@ -58,8 +61,10 @@ Information about file is getting from the Name Server.
 
 For start up NS docker just run NSStart.sh that attached to report.
 The name server sending UDP broadcast for finding a storage servers and clients.
-Finding clients implemented for simplifying testing.  By the request of user server return set of numbers of chunks(for read or write) and ip addres of server. If Storage server is lost  then client get another server ID. Server's IDs grants by round-DNS principe.  for example:
-the system have a two storage servers and 5 clients, then clients get the following server IDs:
+Finding clients implemented for simplifying testing.  By the request of user server return set of numbers of chunks(for read or write) and ip addres of server. If Storage server is lost  then client get another server ID. Server's IDs grants by round-DNS principe.  
+
+For example, the system has a two storage servers and 5 clients, then clients get the following server IDs:
+
 | Client | Storage server id |
 | :---: | :----------: |
 |1|1|
@@ -67,6 +72,7 @@ the system have a two storage servers and 5 clients, then clients get the follow
 |3|1|
 |4|2|
 |5|1|
+
 A name server stored file system in MySQL database. Every connection(storage servers and clients) serviced by separate thread. 
 
 Name server might be run several times for provide a robustness.
